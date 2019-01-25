@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar color="cacharroColor">
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>     -->
+   <ion-title>{{item?.nombre}}</ion-title>
+   <ion-buttons end>
+     <button ion-button (click)=dismiss()>Atras</button>
+   </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button text-center ion-item *ngFor="let pedido of pedidosList" (click)="muestraPedidos(pedido)">
+      {{pedido?.subcat}}
+    </button>
+    <!-- <ion-item *ngFor="let pedido of pedidosList" > -->
+      <!-- <ion-thumbnail item-start>
+        <img src={{pedido?.imagen}}>
+      </ion-thumbnail> -->
+      <!-- <h2>{{pedido?.nombrePlato}} para {{pedido?.nombreUser}} </h2> -->
+      <!-- <p>{{pedido?.subcat}}</p> -->
+      <!-- <p>Zona: {{pedido?.zona}} - Dir. {{pedido?.direccion}}</p> -->
+      <!-- <p>Pago: {{pedido?.pago}} - Cel: {{pedido?.celular}}</p> -->
+      <!-- <p>Opción: {{pedido?.opcion}}</p> -->
+      <!-- <button ion-button color={{pedido?.color}} icon-only clear item-right (click)="presentActionSheet(pedido)"><ion-icon name="radio-button-on"></ion-icon></button> -->
+      <!-- <button ion-button clear item-end></button> -->
+    <!-- </ion-item> -->
+  </ion-list>
+</ion-content>

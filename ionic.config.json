@@ -1,0 +1,7 @@
+{
+  "name": "FitLunch",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

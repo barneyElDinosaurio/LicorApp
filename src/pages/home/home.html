@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar color="cacharroColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>    <ion-title>Menú</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+
+<!--<button round ion-button color="botonesColor"(click)=verMenuDia() block>Ver Menú del día</button>-->
+
+  <ion-list>
+    <button text-center ion-item *ngFor="let item of catsList" (click)="muestraPedidos(item)">
+      {{ item.nombre }}
+    </button>
+  </ion-list>
+
+  <!-- <div text-center> -->
+
+    <button round ion-button color="botonesColor"(click)=verTodos() block>Ver todos los productos</button>
+  <!-- </div> -->
+
+
+
+</ion-content>
+
+<!-- <ion-nav id="nav" #content [root]="rootPage"></ion-nav> -->
